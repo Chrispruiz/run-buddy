@@ -121,11 +121,6 @@ section {
   }
   /* HERO STYLES END */
 
-  .intro {
-      text-align: center;
-  }
-
-  }
   .intro p {
       margin: 0 auto;
       line-height: 1.7;
@@ -133,10 +128,10 @@ section {
       width: 80%;
       font-size: 20px;
       padding: 60px;
+      text-align: center;
   }
 
   .steps {
-      text-align: center;
       background: #fce138;
   }
   .steps div {
@@ -162,10 +157,11 @@ section {
   .section-title {
       font-size: 55px;
       color: #024e76;
-      margin-bottom: 35px;
-      padding: 0 100px 20px 100px;
-      display: inline-block;
       border-bottom: 3px solid;
+      padding-bottom: 20px;
+      text-align: center;
+      margin: 0 auto 35px auto;
+      width: 50%;
   }
 
   .primary-border {
@@ -177,15 +173,20 @@ section {
   }
 
   .trainers {
-      text-align:center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+  
   .trainer {
-      width: 900px;
-      margin: 0 auto 30px auto;
-      background: #024e76;
-      color: #fce138;
-      overflow: auto;
+    margin: 20px;
+    flex: 1;
+    background: #024e76;
+    color: #fce138;
   }
+
   .trainer img {
       width: 35%;
       float: left;
@@ -217,7 +218,6 @@ section {
 
   /* REACH OUT STYLES START */
   .contact {
-      text-align: center;
       background: #024e76;
   }
   .contact h2 {
@@ -249,3 +249,7 @@ section {
       color: #fce138;
   }
   /*reach out styles end */
+
+  .flex-flow {
+      display: flex;
+  }
